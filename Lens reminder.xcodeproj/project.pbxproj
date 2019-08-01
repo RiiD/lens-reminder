@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1419C55222EE311B002C79C3 /* StateAwareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419C55122EE311B002C79C3 /* StateAwareController.swift */; };
+		144E482922F384200050CE6D /* BarcodeReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E482822F384200050CE6D /* BarcodeReceiver.swift */; };
+		144E482D22F399310050CE6D /* LogoMakr_5tTvTe.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */; };
+		146546E822F37FF80042A2FD /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146546E722F37FF80042A2FD /* ScannerViewController.swift */; };
+		146A6D6D22ECAFFC00ED7CD9 /* LensDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146A6D6C22ECAFFC00ED7CD9 /* LensDAL.swift */; };
+		1495D64C22EC35E0005463AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D64B22EC35E0005463AB /* AppDelegate.swift */; };
+		1495D64E22EC35E0005463AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D64D22EC35E0005463AB /* MainViewController.swift */; };
+		1495D65122EC35E0005463AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1495D64F22EC35E0005463AB /* Main.storyboard */; };
+		1495D65622EC35E2005463AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1495D65522EC35E2005463AB /* Assets.xcassets */; };
+		1495D65922EC35E2005463AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1495D65722EC35E2005463AB /* LaunchScreen.storyboard */; };
+		1495D66122EC45EA005463AB /* LensDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D66022EC45EA005463AB /* LensDatabaseViewController.swift */; };
+		1495D66322EC49BF005463AB /* LensInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D66222EC49BF005463AB /* LensInfoViewController.swift */; };
+		1495D66722EC4C93005463AB /* LensTableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D66622EC4C93005463AB /* LensTableItemView.swift */; };
+		1495D68122EC723D005463AB /* AddLensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D68022EC723D005463AB /* AddLensViewController.swift */; };
+		1495D68222EC99B1005463AB /* Lens_reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1495D65222EC35E0005463AB /* Lens_reminder.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1419C55122EE311B002C79C3 /* StateAwareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAwareController.swift; sourceTree = "<group>"; };
+		144E482822F384200050CE6D /* BarcodeReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReceiver.swift; sourceTree = "<group>"; };
+		144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoMakr_5tTvTe.png; sourceTree = "<group>"; };
+		146546E722F37FF80042A2FD /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		146A6D6C22ECAFFC00ED7CD9 /* LensDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDAL.swift; sourceTree = "<group>"; };
+		1495D64822EC35E0005463AB /* Lens reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lens reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1495D64B22EC35E0005463AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1495D64D22EC35E0005463AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1495D65022EC35E0005463AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1495D65322EC35E0005463AB /* Lens_reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lens_reminder.xcdatamodel; sourceTree = "<group>"; };
+		1495D65522EC35E2005463AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1495D65822EC35E2005463AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1495D65A22EC35E2005463AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1495D66022EC45EA005463AB /* LensDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDatabaseViewController.swift; sourceTree = "<group>"; };
+		1495D66222EC49BF005463AB /* LensInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensInfoViewController.swift; sourceTree = "<group>"; };
+		1495D66622EC4C93005463AB /* LensTableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTableItemView.swift; sourceTree = "<group>"; };
+		1495D68022EC723D005463AB /* AddLensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLensViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1495D64522EC35DF005463AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1495D63F22EC35DF005463AB = {
+			isa = PBXGroup;
+			children = (
+				1495D64A22EC35E0005463AB /* Lens reminder */,
+				1495D64922EC35E0005463AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1495D64922EC35E0005463AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1495D64822EC35E0005463AB /* Lens reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1495D64A22EC35E0005463AB /* Lens reminder */ = {
+			isa = PBXGroup;
+			children = (
+				1495D64B22EC35E0005463AB /* AppDelegate.swift */,
+				1495D64D22EC35E0005463AB /* MainViewController.swift */,
+				1495D64F22EC35E0005463AB /* Main.storyboard */,
+				1495D65522EC35E2005463AB /* Assets.xcassets */,
+				1495D65722EC35E2005463AB /* LaunchScreen.storyboard */,
+				1495D65A22EC35E2005463AB /* Info.plist */,
+				1495D65222EC35E0005463AB /* Lens_reminder.xcdatamodeld */,
+				1495D66022EC45EA005463AB /* LensDatabaseViewController.swift */,
+				1495D66222EC49BF005463AB /* LensInfoViewController.swift */,
+				1495D66622EC4C93005463AB /* LensTableItemView.swift */,
+				1495D68022EC723D005463AB /* AddLensViewController.swift */,
+				146A6D6C22ECAFFC00ED7CD9 /* LensDAL.swift */,
+				1419C55122EE311B002C79C3 /* StateAwareController.swift */,
+				146546E722F37FF80042A2FD /* ScannerViewController.swift */,
+				144E482822F384200050CE6D /* BarcodeReceiver.swift */,
+				144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */,
+			);
+			path = "Lens reminder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1495D64722EC35DF005463AB /* Lens reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1495D65D22EC35E2005463AB /* Build configuration list for PBXNativeTarget "Lens reminder" */;
+			buildPhases = (
+				1495D64422EC35DF005463AB /* Sources */,
+				1495D64522EC35DF005463AB /* Frameworks */,
+				1495D64622EC35DF005463AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lens reminder";
+			productName = "Lens reminder";
+			productReference = 1495D64822EC35E0005463AB /* Lens reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1495D64022EC35DF005463AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Nadir;
+				TargetAttributes = {
+					1495D64722EC35DF005463AB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1495D64322EC35DF005463AB /* Build configuration list for PBXProject "Lens reminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1495D63F22EC35DF005463AB;
+			productRefGroup = 1495D64922EC35E0005463AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1495D64722EC35DF005463AB /* Lens reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1495D64622EC35DF005463AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1495D65922EC35E2005463AB /* LaunchScreen.storyboard in Resources */,
+				144E482D22F399310050CE6D /* LogoMakr_5tTvTe.png in Resources */,
+				1495D65622EC35E2005463AB /* Assets.xcassets in Resources */,
+				1495D65122EC35E0005463AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1495D64422EC35DF005463AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1495D68222EC99B1005463AB /* Lens_reminder.xcdatamodeld in Sources */,
+				144E482922F384200050CE6D /* BarcodeReceiver.swift in Sources */,
+				1495D68122EC723D005463AB /* AddLensViewController.swift in Sources */,
+				1419C55222EE311B002C79C3 /* StateAwareController.swift in Sources */,
+				146546E822F37FF80042A2FD /* ScannerViewController.swift in Sources */,
+				1495D66722EC4C93005463AB /* LensTableItemView.swift in Sources */,
+				1495D64E22EC35E0005463AB /* MainViewController.swift in Sources */,
+				1495D66322EC49BF005463AB /* LensInfoViewController.swift in Sources */,
+				1495D66122EC45EA005463AB /* LensDatabaseViewController.swift in Sources */,
+				146A6D6D22ECAFFC00ED7CD9 /* LensDAL.swift in Sources */,
+				1495D64C22EC35E0005463AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1495D64F22EC35E0005463AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1495D65022EC35E0005463AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1495D65722EC35E2005463AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1495D65822EC35E2005463AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1495D65B22EC35E2005463AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1495D65C22EC35E2005463AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1495D65E22EC35E2005463AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lens reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "afeka.Lens-reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1495D65F22EC35E2005463AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lens reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "afeka.Lens-reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1495D64322EC35DF005463AB /* Build configuration list for PBXProject "Lens reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1495D65B22EC35E2005463AB /* Debug */,
+				1495D65C22EC35E2005463AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1495D65D22EC35E2005463AB /* Build configuration list for PBXNativeTarget "Lens reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1495D65E22EC35E2005463AB /* Debug */,
+				1495D65F22EC35E2005463AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1495D65222EC35E0005463AB /* Lens_reminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1495D65322EC35E0005463AB /* Lens_reminder.xcdatamodel */,
+			);
+			currentVersion = 1495D65322EC35E0005463AB /* Lens_reminder.xcdatamodel */;
+			path = Lens_reminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1495D64022EC35DF005463AB /* Project object */;
+}
