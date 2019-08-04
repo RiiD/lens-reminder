@@ -8,15 +8,15 @@
 
 import CoreData
 
-class LensDAL: NSObject {
+class RemoteLensDAL: NSObject {
     let context: NSManagedObjectContext
     
     init(context: NSManagedObjectContext) {
         self.context = context
     }
     
-    func get(id: UUID) -> Lens? {
-        let fr: NSFetchRequest<Lens> = Lens.fetchRequest()
+    func get(id: String) -> RemoteLens? {
+        let fr: NSFetchRequest<RemoteLens> = RemoteLens.fetchRequest()
         fr.predicate = NSPredicate(format: "id == %@", id as CVarArg)
         do {
             let lensList = try context.fetch(fr)
@@ -27,8 +27,8 @@ class LensDAL: NSObject {
         }
     }
     
-    func get(barcode: String) -> Lens? {
-        let fr: NSFetchRequest<Lens> = Lens.fetchRequest()
+    func get(barcode: String) -> RemoteLens? {
+        let fr: NSFetchRequest<RemoteLens> = RemoteLens.fetchRequest()
         fr.predicate = NSPredicate(format: "barcode == %@ AND barcode IS NOT NULL", barcode as CVarArg)
         do {
             let lensList = try context.fetch(fr)
@@ -39,8 +39,8 @@ class LensDAL: NSObject {
         }
     }
     
-    func getAll() -> [Lens] {
-        let fr: NSFetchRequest<Lens> = Lens.fetchRequest()
+    func getAll() -> [RemoteLens] {
+        let fr: NSFetchRequest<RemoteLens> = RemoteLens.fetchRequest()
         let dateSort = NSSortDescriptor(key: #keyPath(Lens.createdAt), ascending: false)
         fr.sortDescriptors = [dateSort]
         do {
@@ -50,19 +50,18 @@ class LensDAL: NSObject {
             print("Failed to fetch lens: \(error)")
         }
         
-        return [Lens]()
+        return [RemoteLens]()
     }
     
-    func create(name: String, description: String, image: Data?, barcode: String?, recommendedHours: Int64, maximumHours: Int64) -> Lens? {
-        let lens = Lens(context: context)
+    func create(id: String, name: String, description: String, image: Data?, barcode: String?, recommendedHours: Int64, maximumHours: Int64) -> RemoteLens? {
+        let lens = RemoteLens(context: context)
         
         lens.name = name
         lens.descr = description
         lens.image = image
         lens.recommendedDuration = recommendedHours
         lens.maximumDuration = maximumHours
-        lens.createdAt = Date.init()
-        lens.id = UUID()
+        lens.id = id
         
         do {
             try context.save()
@@ -73,8 +72,8 @@ class LensDAL: NSObject {
         }
     }
     
-    func search(by name: String) -> [Lens] {
-        let fr: NSFetchRequest<Lens> = Lens.fetchRequest()
+    func search(by name: String) -> [RemoteLens] {
+        let fr: NSFetchRequest<RemoteLens> = RemoteLens.fetchRequest()
         let dateSort = NSSortDescriptor(key: #keyPath(Lens.createdAt), ascending: false)
         fr.sortDescriptors = [dateSort]
         fr.predicate = NSPredicate(format: "name CONTAINS[cd] %@", name as CVarArg)
@@ -85,6 +84,14 @@ class LensDAL: NSObject {
             print("Failed to fetch lens: \(error)")
         }
         
-        return [Lens]()
+        return [RemoteLens]()
+    }
+    
+    func removeAll() {
+        let lens = getAll()
+        for item in lens {
+            context.delete(item)
+        }
+        try? context.save()
     }
 }

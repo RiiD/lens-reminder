@@ -17,6 +17,11 @@ class StateAwareController: UIViewController {
         return appDelegate.lensDal
     }
     
+    func getRemoteLensDAL() -> RemoteLensDAL {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.remoteLensDal
+    }
+    
     func getSelectedLens() -> Lens? {
         if let id = UserDefaults.standard.string(forKey: StateAwareController.SELECTED_LENS_KP) {
             if let uuid = UUID.init(uuidString: id) {

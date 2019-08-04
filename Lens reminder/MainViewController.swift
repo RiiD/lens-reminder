@@ -25,6 +25,36 @@ class MainViewController: StateAwareController {
         super.viewWillAppear(animated)
         setupNotifications()
         setupViews()
+        loadRemoteLens()
+    }
+    
+    func loadRemoteLens() {
+        if let url = URL(string: "http://18.210.22.188:8080/lens") {
+            let task = URLSession.shared.dataTask(with: url, completionHandler: {[weak self] (data, resp, error) in
+                if let sData = data {
+                    if let json = try? JSONSerialization.jsonObject(with: sData, options: []) {
+                        if let lens = json as? NSArray {
+                            self?.getRemoteLensDAL().removeAll()
+                            for item in lens {
+                                if let lensData = item as? NSDictionary {
+                                    print(lensData)
+//                                    self?.getRemoteLensDAL().create(
+//                                        id: lensData["data"] as! String,
+//                                        name: lensData["name"] as! String,
+//                                        description: lensData["description"] as! String,
+//                                        image: Data(base64Encoded: lensData["data"] as! String),
+//                                        barcode: lensData["barcode"] as! String,
+//                                        recommendedHours: lensData["recommendedHours"] as! Int64,
+//                                        maximumHours: lensData["maximumHurs"] as! Int64)
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+            
+            task.resume()
+        }
     }
     
     func setupNotifications() {
@@ -39,7 +69,7 @@ class MainViewController: StateAwareController {
     
     @IBAction func onStart(_ sender: UIButton) {
         print("onStart")
-        guard let selectedLens = getSelectedLens() else {
+        guard let _ = getSelectedLens() else {
             print("onStart - No selected lens")
             // Show error
             return

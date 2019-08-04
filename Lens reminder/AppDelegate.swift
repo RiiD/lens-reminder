@@ -75,6 +75,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var lensDal: LensDAL = {
         return LensDAL(context: persistentContainer.viewContext)
     }()
+    
+    lazy var remoteLensDal: RemoteLensDAL = {
+        return RemoteLensDAL(context: persistentContainer.viewContext)
+    }()
 
     // MARK: - Core Data Saving support
 

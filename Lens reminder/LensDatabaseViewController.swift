@@ -13,9 +13,15 @@ class LensDatabaseViewController: StateAwareController, UITableViewDelegate, UIT
     @IBOutlet weak var tableView: UITableView!
     var lens: [Lens]?
     var selectedLens: Lens?
+    @IBOutlet weak var filterTF: UITextField!
     
     func updateData() {
-        self.lens = self.getLensDAL().getAll()
+        if let name = filterTF.text, name != "" {
+            lens = getLensDAL().search(by: name)
+        } else {
+            lens = getLensDAL().getAll()
+        }
+        
         tableView.reloadData()
     }
     
@@ -59,4 +65,9 @@ class LensDatabaseViewController: StateAwareController, UITableViewDelegate, UIT
             performSegue(withIdentifier: "showInfo", sender: nil)
         }
     }
+    
+    @IBAction func onFind(_ sender: Any) {
+        updateData()
+    }
+    
 }

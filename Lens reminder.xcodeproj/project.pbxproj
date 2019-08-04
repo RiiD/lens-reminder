@@ -12,6 +12,7 @@
 		144E482D22F399310050CE6D /* LogoMakr_5tTvTe.png in Resources */ = {isa = PBXBuildFile; fileRef = 144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */; };
 		146546E822F37FF80042A2FD /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146546E722F37FF80042A2FD /* ScannerViewController.swift */; };
 		146A6D6D22ECAFFC00ED7CD9 /* LensDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146A6D6C22ECAFFC00ED7CD9 /* LensDAL.swift */; };
+		147A5EBA22F41DA900639E7D /* RemoteLensDal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A5EB922F41DA900639E7D /* RemoteLensDal.swift */; };
 		1495D64C22EC35E0005463AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D64B22EC35E0005463AB /* AppDelegate.swift */; };
 		1495D64E22EC35E0005463AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495D64D22EC35E0005463AB /* MainViewController.swift */; };
 		1495D65122EC35E0005463AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1495D64F22EC35E0005463AB /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoMakr_5tTvTe.png; sourceTree = "<group>"; };
 		146546E722F37FF80042A2FD /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		146A6D6C22ECAFFC00ED7CD9 /* LensDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDAL.swift; sourceTree = "<group>"; };
+		147A5EB922F41DA900639E7D /* RemoteLensDal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLensDal.swift; sourceTree = "<group>"; };
 		1495D64822EC35E0005463AB /* Lens reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lens reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1495D64B22EC35E0005463AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1495D64D22EC35E0005463AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				146546E722F37FF80042A2FD /* ScannerViewController.swift */,
 				144E482822F384200050CE6D /* BarcodeReceiver.swift */,
 				144E482C22F399300050CE6D /* LogoMakr_5tTvTe.png */,
+				147A5EB922F41DA900639E7D /* RemoteLensDal.swift */,
 			);
 			path = "Lens reminder";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				1495D64E22EC35E0005463AB /* MainViewController.swift in Sources */,
 				1495D66322EC49BF005463AB /* LensInfoViewController.swift in Sources */,
 				1495D66122EC45EA005463AB /* LensDatabaseViewController.swift in Sources */,
+				147A5EBA22F41DA900639E7D /* RemoteLensDal.swift in Sources */,
 				146A6D6D22ECAFFC00ED7CD9 /* LensDAL.swift in Sources */,
 				1495D64C22EC35E0005463AB /* AppDelegate.swift in Sources */,
 			);
